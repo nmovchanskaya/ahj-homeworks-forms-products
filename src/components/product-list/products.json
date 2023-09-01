@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone XR",
+        "price": 600
+    },
+    {
+        "id": 2,
+        "name": "Samsung Galaxy S10",
+        "price": 800
+    },
+    {
+        "id": 3,
+        "name": "Huawei View",
+        "price": 500
+    }
+]
