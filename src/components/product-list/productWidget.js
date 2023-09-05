@@ -173,6 +173,7 @@ export default class ProductWidget {
 
   onAddCancel(e) {
     if (e.target.className === 'product__add_cancel') {
+      this.tooltipAddWidget.clearTooltips();
       this.nameElemAdd.value = '';
       this.priceElemAdd.value = '';
       this.addForm.classList.toggle('product__add_form_active');
@@ -198,6 +199,7 @@ export default class ProductWidget {
   }
 
   onEditCancel(e) {
+    this.tooltipEditWidget.clearTooltips();
     this.nameElemEdit.value = '';
     this.priceElemEdit.value = '';
     this.editForm.classList.toggle('product__edit_form_active');

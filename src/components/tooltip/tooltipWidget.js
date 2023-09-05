@@ -35,8 +35,7 @@ export default class TooltipWidget {
   }
 
   onSubmit(e) {
-    this.actualTooltips.forEach((message) => this.tooltipFactory.removeTooltip(message.id));
-    this.actualTooltips = [];
+    this.clearTooltips();
 
     if (this.form.checkValidity()) {
       console.log('valid');
@@ -63,5 +62,10 @@ export default class TooltipWidget {
 
     console.log('submit');
     return false;
+  }
+
+  clearTooltips() {
+    this.actualTooltips.forEach((message) => this.tooltipFactory.removeTooltip(message.id));
+    this.actualTooltips = [];
   }
 }
